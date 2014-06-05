@@ -1,0 +1,65 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Show Details{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    {{ parent() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+
+{% block header %}
+    <h2>WNeeds Limited.</h2>
+    <small>Found next technology :P</small>
+{% endblock %}
+
+{% block content %}
+    <h3>Member List</h3><br clear="all" /><br clear="all" />
+    {#{% for member in members %}#}
+        {#{{ member.name }} ........#}
+        {#{{ member.facebook_id }}#}
+    {#{% endfor %}#}
+
+    {#{{ dump(members) }}#}
+
+    {% if members %}
+
+        <table class="table table-bordered table-hover" width="647">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Facebook Id</th>
+                <th>Name</th>
+                <th>Username</th>
+                <th>Locale</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            {% for member in members %}
+            <tr>
+                <td>{{ member.id }}</td>
+                <td>{{ member.facebook_id }}</td>
+                <td>{{ member.name }}</td>
+                <td>{{ member.username }}</td>
+                <td>{{ member.locale }}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+    {% else %}
+
+        <p>No member found!!!!</p>
+
+    {% endif %}
+
+
+{% endblock %}
+
+{% block footer %}
+    <hr/>
+    <hr/>
+    {{ parent() }}
+{% endblock %}

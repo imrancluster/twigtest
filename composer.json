@@ -1,6 +1,12 @@
 {
     "require": {
-        "twig/twig": "1.*"
+        "twig/twig": "1.*",
+        "doctrine/orm": "2.4.*",
+        "symfony/yaml": "2.*",
+        "respect/validation": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {"": "src/"}
     }
 }
 

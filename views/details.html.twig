@@ -1,0 +1,65 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Show Details{% endblock %}
+{% block head %}
+    {{ parent() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+
+{% block header %}
+    <h2>WNeeds Limited.</h2>
+    <small>Found next technology :P</small>
+    <hr/>
+    <hr/>
+{% endblock %}
+
+{% block content %}
+
+    <h3>Hello Mr./Mrs. {{ data.name }}</h3>
+    <br clear="all" /><br clear="all" />
+
+    <form id="graphForm" action="app.php" method="post">
+
+        <div id="checkout_user_info">
+            <div style="float:left; width:110px; padding-top:10px;" align="left">Facebook Id:</div>
+            <div style="float:left; width:290px;" align="left"><input type="text" name="facebook_id" id="facebook_id" value="{{ data.id }}" readonly class="desireapps_total_fields" /></div><br clear="all" /><br clear="all" />
+
+            <div style="float:left; width:110px; padding-top:10px;" align="left">Name</div>
+            <div style="float:left; width:300px;" align="left"><input type="text" name="name" id="name" class="desireapps_total_fields" value="{{ data.name }}" readonly /></div><br clear="all" /><br clear="all" />
+
+            <div style="float:left; width:110px; padding-top:10px;" align="left">First Name</div>
+            <div style="float:left; width:300px;" align="left"><input type="text" name="first_name" id="first_name" class="desireapps_total_fields" readonly value="{{ data.first_name }}" /></div><br clear="all" /><br clear="all" />
+
+            <div style="float:left; width:110px; padding-top:10px;" align="left">Last Name</div>
+            <div style="float:left; width:300px;" align="left"><input type="text" name="last_name" id="last_name" class="desireapps_total_fields" readonly value="{{ data.last_name }}" /></div><br clear="all" /><br clear="all" />
+
+            <div style="float:left; width:110px; padding-top:10px;" align="left">Username</div>
+            <div style="float:left; width:300px;" align="left"><input type="text" name="username" id="username" class="desireapps_total_fields" readonly value="{{ data.username }}" /></div><br clear="all" /><br clear="all" />
+
+            <div style="float:left; width:110px; padding-top:10px;" align="left">Locale</div>
+            <div style="float:left; width:300px;" align="left"><input type="text" name="locale" id="locale" class="desireapps_total_fields" readonly value="{{ data.locale }}" /></div><br clear="all" /><br clear="all" />
+
+            <input type="hidden" name="meta" value="{{ meta }}"/>
+            <input type="hidden" name="pagename" value="details"/>
+
+            <div style="float:left; width:110px; padding-top:10px;" align="left">&nbsp;</div>
+            <div style="float:left; width:300px;" align="left">
+                <input type="submit" name="submit" id="desireapps_add_to_cart_button" style="float:left;width:100px; padding:10px;" value="Submit" />
+            </div>
+            <br clear="all" /><br clear="all" />
+
+        </div>
+    </form>
+
+    <br clear="all" /><br clear="all" />
+
+
+{% endblock %}
+
+{% block footer %}
+    <hr/>
+    <hr/>
+    {{ parent() }}
+{% endblock %}
