@@ -16,6 +16,5 @@ $config = array(
     'db'    => 'twigtest'
 );
 
-
 $db = mysql_connect($config['host'], $config['user'], $config['pass']);
 mysql_select_db($config['db'], $db);

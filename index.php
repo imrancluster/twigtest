@@ -7,7 +7,7 @@
             <form id="graphForm" action="app.php" method="post">
 
                 <div style="float: left;">
-                    <input type="text" name="url" placeholder="facebook graph url" id="url" size="60px" height="20px"/>
+                    <input type="text" name="fb_username" placeholder="facebook user name" id="fb_username" size="30px" height="20px"/>
                 </div>
 
                 <div style="float: left;">
