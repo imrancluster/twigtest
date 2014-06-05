@@ -140,6 +140,7 @@ class Control
 
     public function view($template, $data = array())
     {
+        $this->twigService->clearCacheFiles();
         $templateObj =  $this->twigService->loadTemplate($template);
 
         echo $templateObj->render($data);
