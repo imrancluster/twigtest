@@ -1,22 +1,103 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://twigtest.local/views/public/img/favicon.png">
 
-    </head>
-    <body>
-        <div style="width: 900px; height: 500px; text-align: center; vertical-align: middle;">
-            <form id="graphForm" action="app.php" method="post">
+    <title>Home | TwigTest</title>
 
-                <div style="float: left;">
-                    <input type="text" name="fb_username" placeholder="facebook user name" id="fb_username" size="30px" height="20px"/>
-                </div>
+    <!-- Bootstrap -->
+    <link href="http://twigtest.local/views/public/css/bootstrap.css" rel="stylesheet">
+    <link href="http://twigtest.local/views/public/css/bootstrap-theme.css" rel="stylesheet">
 
-                <div style="float: left;">
-                    <input type="submit" name="submit" value="submit"/>
-                </div>
+    <!-- siimple style -->
+    <link href="http://twigtest.local/views/public/css/style-home.css" rel="stylesheet">
 
-                <input type="hidden" name="pagename" value="index"/>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
 
-            </form>
+<body>
+
+<!-- Fixed navbar -->
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">WNeeds Ltd.</a>
         </div>
-    </body>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Sign in</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<div id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1>Simple landing page</h1>
+                <h2 class="subtitle">No need huge slogan, we believe in less is better</h2>
+                <form class="form-inline" role="form" action="app.php" method="post">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="fb_username" placeholder="Enter your facebook name">
+                    </div>
+
+                    <input type="hidden" name="pagename" value="index" />
+
+                    <input type="submit" name="submit" class="btn btn-theme" value="Submit">
+                </form>
+            </div>
+            <div class="col-lg-4 col-lg-offset-2">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+                    <!-- slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="http://twigtest.local/views/public/img/slide1.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="http://twigtest.local/views/public/img/slide2.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="http://twigtest.local/views/public/img/slide3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-3">
+                <p class="copyright">Copyright &copy; 2014 - wneeds.com</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://twigtest.local/views/public/js/bootstrap.min.js"></script>
+</body>
 </html>

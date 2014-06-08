@@ -31,7 +31,7 @@ class __TwigTemplate_033b1c74c16344875a3fdadd35c1aac72659dad574c9c546069e9140496
     // line 3
     public function block_title($context, array $blocks = array())
     {
-        echo "Show Details";
+        echo "Member List";
     }
 
     // line 4
@@ -129,28 +129,30 @@ class __TwigTemplate_033b1c74c16344875a3fdadd35c1aac72659dad574c9c546069e9140496
             echo "            </tbody>
         </table>
 
+        <a href=\"http://twigtest.local/\" class=\"btn btn-default\" role=\"button\">Add New</a>
+
     ";
         } else {
-            // line 53
+            // line 55
             echo "
         <p>No member found!!!!</p>
 
     ";
         }
-        // line 57
+        // line 59
         echo "
 
 ";
     }
 
-    // line 61
+    // line 63
     public function block_footer($context, array $blocks = array())
     {
-        // line 62
+        // line 64
         echo "    <hr/>
     <hr/>
     ";
-        // line 64
+        // line 66
         $this->displayParentBlock("footer", $context, $blocks);
         echo "
 ";
@@ -168,6 +170,6 @@ class __TwigTemplate_033b1c74c16344875a3fdadd35c1aac72659dad574c9c546069e9140496
 
     public function getDebugInfo()
     {
-        return array (  154 => 64,  150 => 62,  147 => 61,  141 => 57,  135 => 53,  129 => 49,  120 => 46,  116 => 45,  112 => 44,  108 => 43,  104 => 42,  101 => 41,  97 => 40,  82 => 27,  80 => 26,  77 => 25,  74 => 23,  72 => 22,  70 => 21,  68 => 20,  65 => 18,  62 => 17,  56 => 13,  53 => 12,  44 => 6,  41 => 5,  38 => 4,  32 => 3,);
+        return array (  156 => 66,  152 => 64,  149 => 63,  143 => 59,  137 => 55,  129 => 49,  120 => 46,  116 => 45,  112 => 44,  108 => 43,  104 => 42,  101 => 41,  97 => 40,  82 => 27,  80 => 26,  77 => 25,  74 => 23,  72 => 22,  70 => 21,  68 => 20,  65 => 18,  62 => 17,  56 => 13,  53 => 12,  44 => 6,  41 => 5,  38 => 4,  32 => 3,);
     }
 }
