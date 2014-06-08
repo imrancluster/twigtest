@@ -5,3 +5,4 @@ composer.lock
 .idea
 
 view/cache
+view/cache/*
