@@ -1,6 +1,6 @@
 {% extends "base.html.twig" %}
 
-{% block title %}Show Details{% endblock %}
+{% block title %}Member List{% endblock %}
 {% block head %}
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     {{ parent() }}
@@ -48,6 +48,8 @@
             {% endfor %}
             </tbody>
         </table>
+
+        <a href="http://twigtest.local/" class="btn btn-default" role="button">Add New</a>
 
     {% else %}
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace app;
+namespace App;
 
 
 require_once 'autoload.php';
@@ -55,7 +55,7 @@ class Control
     public function showDetails($postdata)
     {
 
-        $url = "http://graph.facebook.com/". $postdata['url'];
+        $url = "http://graph.facebook.com/". $postdata['fb_username'];
 
         $data = json_decode(file_get_contents($url));
 
